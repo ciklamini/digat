@@ -5,4 +5,4 @@ networkx
 numpy
 plotly
 dash_vtk == 0.0.9
-vtk == 9.2.2
+vtk == 9.2.4
