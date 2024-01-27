@@ -1,4 +1,4 @@
-# digat
-Digital Image of Athlete /
+
+# Digital Image of Athlete (DA)
 
 ## References
