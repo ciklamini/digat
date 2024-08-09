@@ -10,7 +10,7 @@ df = pd.DataFrame({
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-server = app.server
+server = app.server # tohle je mega dulezity
 
 # Define the layout of the app
 app.layout = html.Div(children=[
