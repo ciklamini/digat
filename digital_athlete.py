@@ -89,5 +89,7 @@ class ImageUploadApp:
 
 if __name__ == '__main__':
   app = ImageUploadApp()   
-  app.run()  
+  #app.run()  
+  app.run_server(debug=True)  
+  
 
