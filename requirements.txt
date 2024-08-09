@@ -5,3 +5,5 @@ networkx
 numpy
 plotly
 dash_bootstrap_components
+pillow
+pybase64
