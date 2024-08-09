@@ -5,5 +5,6 @@ networkx
 numpy
 plotly
 dash_bootstrap_components == 1.4.0
+dash_html_components
 pillow
 pybase64
