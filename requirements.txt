@@ -4,6 +4,6 @@ gunicorn
 networkx
 numpy
 plotly
-dash_bootstrap_components
+dash_bootstrap_components == 1.5.0
 pillow
 pybase64
