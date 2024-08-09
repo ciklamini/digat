@@ -3,7 +3,5 @@ pandas
 gunicorn
 numpy
 plotly
-pillow
-pybase64
 dash_core_components
 dash_html_components
