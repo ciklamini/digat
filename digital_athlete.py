@@ -85,3 +85,9 @@ class ImageUploadApp:
   
     def run(self, debug=True):  
         self.app.run_server(debug=debug)  
+
+
+if __name__ == '__main__':  
+    app = frontend.ImageUploadApp()  
+    app.run()  
+
