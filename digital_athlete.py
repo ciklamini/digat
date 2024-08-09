@@ -88,6 +88,6 @@ class ImageUploadApp:
 
 
 if __name__ == '__main__':  
-    app = ImageUploadApp()  
+    app = ImageUploadApp()   
     app.run()  
 
