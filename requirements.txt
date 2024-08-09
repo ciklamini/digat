@@ -1,7 +1,6 @@
 dash
 pandas
 gunicorn
-networkx
 numpy
 plotly
 pillow
