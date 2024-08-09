@@ -1,34 +1,33 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Input, Output
-import plotly.express as px
 import pandas as pd
 
 # Create a simple DataFrame
 df = pd.DataFrame({
-    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
-    "Amount": [4, 1, 2, 2, 4, 5],
-    "City": ["SF", "SF", "SF", "NYC", "NYC", "NYC"]
+    "Year": [2010, 2011, 2012, 2013, 2014],
+    "Value": [100, 200, 300, 400, 500]
 })
-
-# Create a simple bar chart using Plotly
-fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
 
 # Define the layout of the app
 app.layout = html.Div(children=[
-    html.H1(children='Simple Dash Plotly App'),
+    html.H1(children='Simple Dash App'),
 
-    html.Div(children='''
-        Dash: A web application framework for Python.
-    '''),
+    html.Div(children='A simple line chart example.'),
 
     dcc.Graph(
         id='example-graph',
-        figure=fig
+        figure={
+            'data': [
+                {'x': df['Year'], 'y': df['Value'], 'type': 'line', 'name': 'Value'},
+            ],
+            'layout': {
+                'title': 'Yearly Values'
+            }
+        }
     )
 ])
 
