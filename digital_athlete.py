@@ -13,6 +13,7 @@ class ImageUploadApp:
     def __init__(self, title="Image Upload and Visualization App"):  
         self.title = title  
         self.app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])  
+        self.server = self.app.server
         self._set_layout()  
         self._set_callbacks()  
   
