@@ -12,7 +12,7 @@ from PIL import Image
 class ImageUploadApp:  
     def __init__(self, title="Image Upload and Visualization App"):  
         self.title = title  
-        self.app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])  
+        self.app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])  
         self._set_layout()  
         self._set_callbacks()  
   
@@ -93,4 +93,5 @@ class ImageUploadApp:
 
 if __name__ == '__main__':
   app = ImageUploadApp()   
+  server = app.server # tohle je mega dulezity
   app.run()  
