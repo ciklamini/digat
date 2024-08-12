@@ -89,9 +89,9 @@ class ImageUploadApp:
   
     def run(self, debug=True):  
         self.app.run_server(debug=debug)  
-
+      
+app = ImageUploadApp()   
+server = app.server # tohle je mega dulezity
 
 if __name__ == '__main__':
-  app = ImageUploadApp()   
-  server = app.server # tohle je mega dulezity
   app.run()  
