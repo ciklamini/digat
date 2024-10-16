@@ -19,8 +19,8 @@ app.layout = html.Div([
     dcc.Upload(
         id='upload-data',
         children=html.Div([
-            'Drag and Drop or ',
-            html.A('Select Files')
+            'Drag and Drop 3Dtracks emt file or ',
+            html.A('Select It ')
         ]),
         style={
             'width': '100%',
