@@ -18,7 +18,7 @@ app = Dash(__name__, external_stylesheets=external_stylesheets)
 app.layout = html.Div([
     
     dcc.Markdown('''
-        ## LaTeX in a Markdown component:
+        ## Evaluation of point tracks:
     
         This app has function to see 3D tracks to furher explore possibility \
             on movements.
@@ -80,7 +80,7 @@ def parse_contents(contents, filename, date):
     return html.Div([
         # markdown pro describe 
         dcc.Markdown('''
-        ## LaTeX in a Markdown component:
+        ## Preparation of component for abdomen waves :
     
         This example uses the block delimiter:
         $$
