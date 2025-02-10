@@ -145,6 +145,6 @@ def update_output(list_of_contents, list_of_names, list_of_dates):
             dcc.Graph(figure=fig), 
             # dcc.Graph(figure=fig2), 
             ])
-
+server = app.server # tohle je mega dulezity
 if __name__ == '__main__':
     app.run_server(debug=True)
